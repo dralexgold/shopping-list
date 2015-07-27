@@ -1,18 +1,26 @@
 $(document).ready(function() {
+
+	console.log('loaded');
+	// Enter to enable add
+	$('.add-items').keyup(function(event){
+		if(event.keyCode == 13) {
+			$('.add-button').mousedown();
+		};
+	});
+
 	// add list items
-	$('.add-button').click(function(){
-		var txtbox = document.getElementbyId('.add-items');
+	$('.add-button').mousedown(function() {
+		var txtbox = $('.add-items')[0];
+		var txtval = txtbox.value;
 
 		if (!$.trim($('.add-items').val())){
 			alert('You\'ve entered nothing in the box!');
 		} else {
 
-			$('<li></li>').appendTo('<ul>').html('<div class="checkbox"></div>' + txtval + '</span>');
-			document.getElementById('item').value = '';
+			$('.items-list').prepend('<li class="items"><div class="checkbox"></div><span>' + txtval + '</span></li>');
+			$('.add-items').val('');
 		};
-
 	});
-
 
 
 	// tick items
@@ -23,3 +31,5 @@ $(document).ready(function() {
 
 	// clear list
 });
+
+

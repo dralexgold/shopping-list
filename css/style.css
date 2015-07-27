@@ -51,8 +51,8 @@ section {
 
 .checkbox, .checkbox-x, .checkbox-x-grey {
   float: left;
-  margin-top: 3px;
-  margin-right: 30px;
+  margin-top: 2px;
+  margin-right: 20px;
   height: 17px;
   width: 17px;
 }
@@ -78,6 +78,6 @@ li {
 	margin: 2px 0;
 }
 
-li span {
+.grey-text {
 	color: #A0A0A0;
 }
