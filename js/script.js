@@ -24,7 +24,9 @@ $(document).ready(function() {
 
 
 	// tick items
-
+	$('.items-list').on('click', 'li', function(){
+		$(this).children('.checkbox').toggleClass('checkbox-x');
+	});
 
 	// turn ticked items grey
 
