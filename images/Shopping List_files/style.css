@@ -1,0 +1,83 @@
+header {
+	font-family: Raleway, sans-serif;
+	text-align: center;
+	background-color: #BFAE8E;
+	color: #034C8C;
+}
+
+section, footer {
+	font-family: Ubuntu, sans-serif;
+}
+
+section {
+	color: #000;
+}
+
+.heading {
+	padding: 60px 0;
+	margin: 0 auto;
+}
+
+.masthead {
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.tagline {
+	font-size: 16px;
+	padding-top: 20px;
+}
+
+.list-container {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 20px 0;
+}
+
+.clear-button {
+	display: block;
+	margin: 15px auto;
+	text-align: center;
+}
+
+.add-items {
+	width: 400px;
+}
+
+.add-container {
+	margin: 15px auto;
+}
+
+.checkbox, .checkbox-x, .checkbox-x-grey {
+  float: left;
+  margin-top: 2px;
+  margin-right: 20px;
+  height: 17px;
+  width: 17px;
+}
+
+.checkbox {
+	background: url('../images/box.png');
+}
+
+.checkbox-x {
+	background: url('../images/box-checked.png');
+}
+
+.checkbox-x-grey {
+	background: url('../images/box-checked-grey.png');
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	text-align: left;
+	margin: 2px 0;
+}
+
+.grey-text {
+	color: #A0A0A0;
+}

@@ -4,12 +4,12 @@ $(document).ready(function() {
 	// Enter to enable add
 	$('.add-items').keyup(function(event){
 		if(event.keyCode == 13) {
-			$('.add-button').click();
+			$('.add-button').mousedown();
 		};
 	});
 
 	// add list items
-	$('.add-button').click(function() {
+	$('.add-button').mousedown(function() {
 		var txtbox = $('.add-items')[0];
 		var txtval = txtbox.value;
 
@@ -26,14 +26,12 @@ $(document).ready(function() {
 	// tick items
 	$('.items-list').on('click', 'li', function(){
 		$(this).children('.checkbox').toggleClass('checkbox-x');
-		$(this).children('.checkbox').toggleClass('checkbox-x-grey');
-		$(this).children().toggleClass('grey-text');
 	});
 
+	// turn ticked items grey
+
+
 	// clear list
-	$('.clear-button').click(function(){
-		$('.items-list').empty();
-	});
 });
 
 
